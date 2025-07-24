@@ -4,8 +4,6 @@
 ## Introduction
 This guide outlines the process of deploying a static website using Amazon Web Services (AWS). The deployment leverages AWS S3 for hosting the static website, Route 53 for domain registration and DNS management, AWS Certificate Manager for securing the site with HTTPS, and CloudFront for content delivery and performance optimisation. This setup ensures a scalable, secure, and globally accessible website with minimal maintenance.
 
-The goal is to provide a step-by-step walkthrough for beginners and intermediate users to deploy a personal website (e.g., `fredcodes.click`) with a professional setup. Screenshots of the AWS Management Console are included to clarify key steps.
-
 ## Objectives
 - **Host a static website**: Use AWS S3 to store and serve static website files (HTML, CSS, JavaScript, images).
 - **Register a custom domain**: Purchase and configure a domain using Route 53 for a professional web address.
