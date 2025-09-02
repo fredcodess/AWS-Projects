@@ -29,6 +29,7 @@ Each project folder will include:
 - **SNS** – Messaging & alerts
 - **CloudWatch** – Logging, metrics, and monitoring
 - **API Gateway** – Scalable REST APIs
+- And more
 
 ---
 
