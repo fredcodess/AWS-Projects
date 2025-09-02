@@ -28,9 +28,6 @@ Imagine running a production EC2 instance that suddenly spikes in CPU usage. Thi
 
 ![Image Alt](https://github.com/fredcodess/AWS-Projects/blob/main/images/moni-archi.png?raw=true)
 
-```
-
-````
 
 ---
 
