@@ -44,7 +44,7 @@ Imagine running a production EC2 instance that suddenly spikes in CPU usage. Thi
 
 ## 🛠️ Setup Instructions
 
-### 1️⃣ Launch EC2 Instance
+### Launch EC2 Instance
 
 - AMI: **Amazon Linux 2023**
 - Instance type: e.g. `t2.micro`
@@ -54,7 +54,7 @@ Imagine running a production EC2 instance that suddenly spikes in CPU usage. Thi
 
 ---
 
-### 2️⃣ Install `stress` on EC2
+###  Install `stress` on EC2
 
 SSH into the instance:
 
@@ -73,7 +73,7 @@ This creates a 3-minute CPU spike, triggering the CloudWatch alarm.
 
 ---
 
-### 3️⃣ Create SNS Topic & Email Subscription
+### Create SNS Topic & Email Subscription
 
 Create SNS Topic:
 
@@ -96,7 +96,7 @@ aws sns subscribe \
 
 ---
 
-### 4️⃣ Set Up CloudWatch Alarm
+### Set Up CloudWatch Alarm
 
 1. Go to **CloudWatch > Alarms > Create Alarm**
 2. Metric: `CPUUtilization` for the EC2 instance
@@ -115,7 +115,7 @@ Once stress is applied, alarm should enter `ALARM` state within 60–90 seconds.
 
 ---
 
-### 5️⃣ Email Alert Trigger
+### Email Alert Trigger
 
 After the threshold is crossed, an email alert is sent via SNS.
 
@@ -123,7 +123,7 @@ After the threshold is crossed, an email alert is sent via SNS.
 
 ---
 
-### 6️⃣ Auto-Healing with Lambda
+### Auto-Healing with Lambda
 
 You can create a Lambda function that automatically reboots or restarts the EC2 instance when triggered by the alarm.
 
